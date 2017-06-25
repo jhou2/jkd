@@ -286,3 +286,23 @@ form p {
 .first {
       margin-top: 20px;
 }
+
+/* Center images in item */
+#wrapper > div.clients > div.item > a > img {
+      margin-top: 15px;
+}
+
+.sixty {
+      width: 60%;
+}
+
+.entry {
+      margin: 5px;
+      line-height: 1.5vh;
+      font-size: larger;
+}
+
+div.entry > input {
+      width: 20%;
+      height: 20px;
+}
