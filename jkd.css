@@ -215,20 +215,39 @@ dl {
 dt {
       color: #ed1c24; 
 }
+
+.container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+}
+
+@media all and (max-width: 800px) {
+  .container {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+  .container:after{
+    content: "";
+    flex-basis: auto;
+  }
+}
+
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .container {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
 .item {
-      margin: 10px;
       padding: 10px;
       border: 1px solid gray;
       text-align: center;
       width: 150px;
       height: 150px;
       margin: auto; 
+      margin-top: 20px;
 }
-
-.container {
-      display: flex;
-      flex-direction: row;
-      flex-flow: row;
-      flex-wrap: wrap;
-      margin: 20px;
-      
