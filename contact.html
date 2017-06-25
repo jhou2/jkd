@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JKD Digital Agency</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="jkd.css" type="text/css">
+
+</head>
+
+<body>
+    <div>
+        <img id="headerimage" src="homepage/header.png" alt="JKD Digital Agency">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="work.html">work</a></li>
+            <li><a href="clients.html">clients</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="sitemap.html">sitemap</a></li>
+        </ul>
+    </nav>
+    <main id="wrapper">
+        <h1>Get in touch with us!</h1>
+        <form method="post" name="signup" action="http://webdevbasics.net/scripts/demo.php">
+        
+                <div>
+                    <label for="userfn">Name:</label>
+                    <input type="text" name="userfn">
+                </div>
+                <div>
+                    <label for="useremail">E-mail:</label>
+                    <input type="email" name="useremail">
+                </div>
+
+            <fieldset class="spacing first">
+                <legend>Select the work you want us to do for you:</legend>
+                <div class="content-box"><input type="checkbox" name="UI/UX" value="fav">UI/UX Design</div>
+                <div class="content-box"><input type="checkbox" name="Web" value="fav">Website Development</div>
+                <div class="content-box"><input type="checkbox" name="App" value="fav">App Development</div>
+                <div class="content-box"><input type="checkbox" name="Print" value="fav">Print</div>
+                <div class="content-box"><input type="checkbox" name="Marketing" value="fav">Marketing Strategy</div>
+                <div class="content-box"><input type="checkbox" name="Brand" value="fav">Brand ID Design</div>
+            </fieldset>
+
+            <div>Let us know what you would like to quote on:</div>
+            <div>
+                <textarea name="comments" cols="60" rows="10">Enter your comments here. </textarea>
+            </div>
+
+            <div class="first"><input type="submit" value="Subscribe"> <input type="reset" value="Cancel"></div>
+        </form>
+
+
+    </main>
+    <footer>
+        <div class="copyright"><i>Copyright</i> &copy; 2017 JKD Digital Agency | Designed by Kit Yee Yu</div>
+        <div class="copyright">
+            <script>
+                document.write(document.lastModified);
+            </script>
+        </div>
+    </footer>
+</body>
+
+</html>
